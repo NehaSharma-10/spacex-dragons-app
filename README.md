@@ -31,3 +31,9 @@ A React + TypeScript web application displaying SpaceX Dragon spacecraft details
 ```bash
 git clone https://github.com/NehaSharma-10/spacex-dragons-app.git
 cd spacex-dragons-app
+
+2. Install dependencies:
+
+```bash
+git clone https://github.com/NehaSharma-10/spacex-dragons-app.git
+cd spacex-dragons-app
