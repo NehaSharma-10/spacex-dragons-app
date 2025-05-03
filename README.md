@@ -37,19 +37,22 @@ cd spacex-dragons-app
 
 2. Install dependencies:  
 
-```javascript
+```bash
 npm install
 ```
 
-```
-```
-3. Start the development server:
-3. 
 
+3. Start the development server:
+```bash
 npm run dev
-Open your browser at http://localhost:5173
+```
+4.  Open your browser at http://localhost:5173
+
+
 
 📁 Project Structure
+
+```css
 css
 Copy
 Edit
@@ -66,6 +69,7 @@ src/
 ├── store/
 │   └── authStore.ts
 └── theme.ts
+```
 💡 Notes
 This project uses a mock authentication (no real backend/token). Login state persists via Zustand persist.
 
