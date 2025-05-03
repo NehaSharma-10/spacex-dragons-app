@@ -50,12 +50,10 @@ npm run dev
 
 
 
-📁 Project Structure
 
-```css
-css
-Copy
-Edit
+## 📁 Project Structure
+
+```
 src/
 ├── App.tsx
 ├── main.tsx
@@ -70,12 +68,14 @@ src/
 │   └── authStore.ts
 └── theme.ts
 ```
-💡 Notes
+
+
+## 💡 Notes
 This project uses a mock authentication (no real backend/token). Login state persists via Zustand persist.
 
 Data is fetched from SpaceX API.
 
-📜 License
+## 📜 License
 MIT License
 
 Made with ❤️ by Neha Sharma
