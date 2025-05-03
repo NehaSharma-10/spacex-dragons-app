@@ -28,20 +28,24 @@ A React + TypeScript web application displaying SpaceX Dragon spacecraft details
 
 1. Clone the repository:
 
+
 ```bash
 git clone https://github.com/NehaSharma-10/spacex-dragons-app.git
 cd spacex-dragons-app
-Install dependencies:
+```
 
-bash
-Copy
-Edit
+
+2. Install dependencies:  
+
+```javascript
 npm install
-Start the development server:
+```
 
-bash
-Copy
-Edit
+```
+```
+3. Start the development server:
+3. 
+
 npm run dev
 Open your browser at http://localhost:5173
 
