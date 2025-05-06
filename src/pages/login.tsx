@@ -36,7 +36,7 @@ const LoginPage = () => {
   };
 
   return (
-    <Box  display="flex" py={20} style={{justifyContent:"center"}}>
+    <Box  display="flex" my={30} py={20} style={{justifyContent:"center"}}>
     <Paper shadow="md" p="xl" radius="md" withBorder maw={400} w="100%">
       <Title order={2} mb="lg" ta="center">
         Login

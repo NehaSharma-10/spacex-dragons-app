@@ -3,7 +3,7 @@ import { persist } from "zustand/middleware";
 
 type AuthState = {
   isAuthenticated: boolean;
-  user: { name: string } | null; // or any user shape
+  user: { name: string } | null;
   login: (user: { name: string }) => void;
   logout: () => void;
 };

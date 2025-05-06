@@ -2,7 +2,7 @@ import { FC } from "react";
 import { Container } from "@mantine/core";
 import LoginPage from "../login";
 import Header from "../../components/Header";
-import DragonCards from "../../components/DragonCard";
+import DragonCards from "../../components/DragonList";
 
 const Landing: FC = () => {
   const demoProps = {
@@ -14,7 +14,6 @@ const Landing: FC = () => {
     <>
       <Container pt={50}>
         <LoginPage />
-		{/* <DragonCards /> */}
       </Container>
     </>
   );
