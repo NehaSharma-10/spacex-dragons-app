@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Container } from "@mantine/core";
-import LoginPage from "../login";
+import LoginPage from "../Login";
 import Header from "../../components/Header";
 import DragonCards from "../../components/DragonList";
 

@@ -5,11 +5,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import App from "./App";
 import Landing from "./pages/landing/Landing";
-import LoginPage from "./pages/login";
+import LoginPage from "./pages/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
-import DragonPage from "./pages/dragons";
+import DragonPage from "./pages/DragonPage";
 import PublicRoute from "./components/PublicRoute";
-import DragonDetailPage from "./pages/DragonDetailPage";
+import DragonDetailPage from "./pages/DragonDetail";
 
 const queryClient = new QueryClient({
   defaultOptions: {

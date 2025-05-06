@@ -59,14 +59,18 @@ src/
 ├── main.tsx
 ├── components/
 │   └── Header.tsx
+    └── DragonList.tsx
 ├── pages/
 │   ├── Landing.tsx
 │   ├── LoginPage.tsx
-│   ├── DragonCards.tsx
-│   └── DragonDetail.tsx
+│   ├── Dragon.tsx
+│   └── DragonDetailPage.tsx
 ├── store/
 │   └── authStore.ts
-└── theme.ts
+├── services/
+│   └── api.ts
+├── utils/
+│   └── types.ts
 ```
 
 
