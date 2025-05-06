@@ -1,4 +1,3 @@
-
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -31,6 +30,7 @@ export const routes = [
         children: [
           { path: "/login", element: <Login /> },
           { path: "/", element: <Landing /> },
+          { path: "*", element: <Login /> },
         ],
       },
       {
@@ -38,6 +38,7 @@ export const routes = [
         children: [
           { path: "/dragons", element: <DragonPage /> },
           { path: "/dragon/:id", element: <DragonDetailPage /> },
+          { path: "*", element: <DragonPage /> },
         ],
       },
     ],
