@@ -17,7 +17,7 @@ const DragonList = ({ dragons }: DragonListProps) => {
   }
 
   return (
-    <Table striped highlightOnHover withBorder>
+    <Table striped highlightOnHover withBorder mt="50px">
       <thead>
         <tr>
           <th>Name</th>
