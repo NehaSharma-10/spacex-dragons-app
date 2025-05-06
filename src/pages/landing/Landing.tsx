@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Container } from "@mantine/core";
-import LoginPage from "../Login";
+import LoginPage from "../LoginPage";
 
 const Landing: FC = () => {
   const demoProps = {

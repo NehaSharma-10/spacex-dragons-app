@@ -3,7 +3,7 @@ import { Dragon } from "../utils/types";
 export const fetchDragons = async (): Promise<Dragon[]> => {
   const response = await fetch("https://api.spacexdata.com/v4/dragons");
   if (!response.ok) {
-    throw new Error("Failed to fetch dragons");
+    throw new Error("Failed to fetch dragons details");
   }
   return response.json();
 };
