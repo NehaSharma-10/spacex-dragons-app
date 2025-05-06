@@ -82,12 +82,12 @@ const DragonPage = () => {
       </Title>
 
       <Flex
-        direction={{ base: "column", sm: "column", md: "row" }} // column on mobile, row on md+
+        direction={{ base: "column", sm: "column", md: "row" }} 
         wrap="wrap"
         gap="md"
         mb="xl"
-        justify="flex-end"
-        align="end"
+        justify="flex-start" 
+        align="center"
       >
         <TextInput
           label="Search Dragons"
@@ -133,7 +133,7 @@ const DragonPage = () => {
           variant="outline"
           onClick={resetFilters}
           color="gray"
-          style={{ minWidth: "150px" }}
+          style={{ minWidth: "150px", marginTop: "10px" }}
         >
           Reset Filters
         </Button>

@@ -1,4 +1,3 @@
-// src/components/PublicRoute.tsx
 import { useAuthStore } from '../store/app.store';
 import { Navigate, Outlet } from 'react-router-dom';
 

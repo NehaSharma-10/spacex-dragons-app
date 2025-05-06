@@ -7,11 +7,8 @@ import {
   Title,
   Text,
   Image,
-  SimpleGrid,
-  Grid,
   Card,
   Badge,
-  Group,
   List,
   Divider,
   Button,
@@ -51,12 +48,10 @@ const DragonDetailPage = () => {
   }
 
   return (
-    <Container size="lg" py="xl">
-      <Button component={Link} to="/dragons" variant="outline">
-        Back to Dragons
-      </Button>
+    <Container size="md" px="md" py="xl">
+     
 
-      <Title align="center" mb="md">
+      <Title align="center" mb="md" mt={10}>
         {dragon.name}
       </Title>
 
@@ -66,19 +61,31 @@ const DragonDetailPage = () => {
         </Badge>
       </Center>
 
-      <Carousel withIndicators height={300} slideSize="50%" slideGap="md" loop>
+      <Carousel
+        withIndicators
+        height={300}
+        slideSize="50%"
+        slideGap="md"
+        loop
+        breakpoints={[
+          { maxWidth: "md", slideSize: "70%" },
+          { maxWidth: "sm", slideSize: "100%" },
+        ]}
+      >
         {dragon.flickr_images.map((url, index) => (
           <Carousel.Slide key={index}>
             <Image
-              src={url}
-              alt={`${dragon.name} image ${index + 1}`}
-              radius="md"
+             src={url}
+             alt={`${dragon.name} image ${index + 1}`}
+             radius="md"
+             fit="contain"
+             width="100%"
             />
           </Carousel.Slide>
         ))}
       </Carousel>
 
-      <Card shadow="md" padding="lg" mt="xl">
+      <Card shadow="sm" padding="md" mt="xl" withBorder>
         <Title order={3}>Description</Title>
         <Text>{dragon.description}</Text>
         <Text mt="sm">
@@ -92,29 +99,38 @@ const DragonDetailPage = () => {
         </Text>
       </Card>
 
-      {/* <Divider my="xl" /> */}
+      <Divider my="xl" />
 
       <Tabs
-        defaultValue="heat-shield"
-        variant="pills"
-        radius="xs"
-        color="#1B2541"
-       
-        mt={30}
+  defaultValue="heat-shield"
+  variant="pills"
+  radius="xs"
+  color="#1B2541"
+  mt={30}
+  styles={(theme) => ({
+    list: {
+      display: "flex",
+      flexWrap: "wrap", 
+      gap: theme.spacing.xs,
+    },
+    tab: {
+      flex: 1,
+      minWidth: 120,
+      textAlign: "center",
+      paddingTop: 10,
+      paddingBottom: 10,
+      backgroundColor:'#f2f2f2',
 
-        styles={(theme) => ({
-          list: {
-            display: "flex",
-          },
-          tab: {
-            flex: 1,
-            paddingTop: "10px",
-            paddingBottom: "10px",
-          },
-        
-        })}
-      >
-        
+      [`@media (max-width: ${theme.breakpoints.sm})`]: {
+        flex: "unset",
+        minWidth: "auto", 
+        fontSize: theme.fontSizes.sm,
+        paddingInline: theme.spacing.xs,
+      },
+    },
+  })}
+>
+
         <Tabs.List>
           <Tabs.Tab value="heat-shield">Heat Shield</Tabs.Tab>
           <Tabs.Tab value="dimensions">Dimensions</Tabs.Tab>
@@ -204,6 +220,9 @@ const DragonDetailPage = () => {
           </List>
         </Tabs.Panel>
       </Tabs>
+      <Button component={Link} to="/dragons" variant="outline" my={30}>
+        All Dragons
+      </Button>
     </Container>
   );
 };
