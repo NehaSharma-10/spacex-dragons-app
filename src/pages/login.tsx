@@ -4,7 +4,7 @@ import { useAuthStore } from "../store/app.store";
 import { Button, TextInput, PasswordInput, Box, Paper, Title } from "@mantine/core";
 import { useForm } from "@mantine/form";
 
-const LoginPage = () => {
+const Login = () => {
   const navigate = useNavigate();
   const login = useAuthStore((state) => state.login);
 
@@ -72,4 +72,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default Login;

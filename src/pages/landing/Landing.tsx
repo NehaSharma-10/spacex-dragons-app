@@ -1,8 +1,6 @@
 import { FC } from "react";
 import { Container } from "@mantine/core";
 import LoginPage from "../Login";
-import Header from "../../components/Header";
-import DragonCards from "../../components/DragonList";
 
 const Landing: FC = () => {
   const demoProps = {
