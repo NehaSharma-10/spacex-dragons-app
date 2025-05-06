@@ -39,7 +39,7 @@ const DragonList = ({ dragons }: DragonListProps) => {
             <td>
               <Button
                 component={Link}
-                to={`/dragon/${dragon.id}`}
+                to={`/pages/dragon/${dragon.id}`}
                 target="_blank"
                 size="xs"
                 variant="light"
