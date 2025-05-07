@@ -2,21 +2,45 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  min-height: 100vh;
+}
+
 * body h1 {
   font-size: clamp(2.5rem, 4vw, 4rem);
   font-weight: 500;
   color: wheat;
 }
+
 * body h2 {
   font-size: clamp(1.5rem, 2.5vw, 4rem);
 }
+
 * body h3 {
   font-size: clamp(1.2rem, 1.8vw, 3rem);
 }
+
 * body p {
   font-size: clamp(1.1rem, 1.2vw, 2rem);
 }
 
 label {
-  color: black !important;
-}/*# sourceMappingURL=App.css.map */
+  color: white !important;
+}
+
+.filter-classes {
+  align-items: end;
+}
+
+@media (max-width: 768px) {
+  .filter-classes {
+    align-items: center;
+  }
+
+  .landing-page-div {
+    flex-direction: column;
+  }
+}

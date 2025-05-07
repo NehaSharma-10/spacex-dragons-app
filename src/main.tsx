@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import App from "./App";
 import Landing from "./pages/landing/Landing";
-import Login from "./pages/LoginPage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import DragonPage from "./pages/DragonPage";
 import PublicRoute from "./components/PublicRoute";
@@ -28,9 +27,9 @@ export const routes = [
       {
         element: <PublicRoute />,
         children: [
-          { path: "/login", element: <Login /> },
           { path: "/", element: <Landing /> },
-          { path: "*", element: <Login /> },
+          { path: "/", element: <Landing /> },
+          { path: "*", element: <Landing /> },
         ],
       },
       {

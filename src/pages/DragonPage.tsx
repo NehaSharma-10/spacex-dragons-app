@@ -77,7 +77,7 @@ const DragonPage = () => {
 
   return (
     <Container size="lg" py="xl">
-      <Title order={4} align="center" mb="xl" fw="semibold">
+      <Title order={4} align="center" mb="xl" fw="semibold" color="white">
         All Dragons Overview
       </Title>
 
@@ -87,7 +87,8 @@ const DragonPage = () => {
         gap="md"
         mb="xl"
         justify="flex-start" 
-        align="center"
+        
+        className="filter-classes"
       >
         <TextInput
           label="Search Dragons"
@@ -111,6 +112,7 @@ const DragonPage = () => {
 
         <TextInput
           label="Dragon Type"
+          // classNames={{label:}}
           placeholder="Filter by dragon type"
           value={dragonType}
           onChange={(event) => setDragonType(event.target.value)}
@@ -133,7 +135,8 @@ const DragonPage = () => {
           variant="outline"
           onClick={resetFilters}
           color="gray"
-          style={{ minWidth: "150px", marginTop: "10px" }}
+          bg="white"
+          style={{ minWidth: "150px", marginTop: "10px" , marginBottom:'0px'}}
         >
           Reset Filters
         </Button>

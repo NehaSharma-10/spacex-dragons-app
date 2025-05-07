@@ -32,7 +32,7 @@ const DragonList = ({ dragons }: DragonListProps) => {
   if (isMobile) {
 
     return (
-      <Stack spacing="md" mt="md">
+      <Stack spacing="md" mt="md" bg='transparent'>
         {dragons.map((dragon) => (
           <Card key={dragon.id} withBorder shadow="sm">
             {dragon.flickr_images && dragon.flickr_images.length > 0 && (
@@ -75,9 +75,9 @@ const DragonList = ({ dragons }: DragonListProps) => {
 
   return (
     <ScrollArea>
-      <Table striped highlightOnHover withBorder mt="50px" miw={700}>
+      <Table  highlightOnHover withBorder mt="50px" miw={700}>
         <thead>
-          <tr>
+          <tr >
             <th>Image</th> 
             <th>Name</th>
             <th>First Flight</th>

@@ -13,7 +13,14 @@ export default function App() {
   }, [pathname]);
 
   return (
-    <MantineProvider theme={theme} withGlobalStyles withNormalizeCSS>
+    <MantineProvider  withGlobalStyles
+    withNormalizeCSS
+    theme={{
+      primaryColor: 'teal', 
+      fontFamily: 'Poppins, sans-serif', 
+      headings: { fontFamily: 'Poppins, sans-serif' },
+      defaultRadius: 'md', 
+    }}>
       <Header />
       <Outlet /> 
     </MantineProvider>
